@@ -1,0 +1,4 @@
+Useful Links
+fast 2d DCT algorithm in java
+1)http://stackoverflow.com/questions/8178614/what-alternatives-are-there-to-the-phash-open-source-perceptual-hash-library
+2)https://code.google.com/p/ironchef-team21/source/browse/ironchef_team21/src/ImagePHash.java?r=75856e07bb89645d0e56820d6e79f8219a06bfb7

@@ -1,0 +1,43 @@
+— Crawler Service
+The service can use either the Firefox WebDriver or the PhantomJS WebDriver.
+The Firefox WebDriver is useful for previewing and is generally more robust.
+
+!!!
+Switching between the WebDrivers also requires excluding the NOT used
+dependency from pom.xml because they support different version of Selenium and this creates problems.
+!!!
+
+A) For Firefox WebDriver
+
+1.
+Install Firefox Browser
+
+B) For PhantomJS WebDriver
+
+1.
+Download precompiled phantomjs and add bin location to PATH
+
+— Windows : add location to the PATH environment variable
+— Linux copy bin folder contents to /usr/local/bin
+— Mac OS X : require a pre built version from https://github.com/eugene1g/phantomjs/releases
+
+2.
+Project uses MAVEN for the dependencies(namely the PhantomJS Driver). Just clean and build
+to download everything.
+
+The application immediately start to fetch images from Imgur and stores them in ../ImgurImages
+
+— Viewer Service
+
+Simple HTML5 web app that takes an Image URL or IBR and looks for identical images in the IBR Database
+
+— IBR Service
+
+The default operation is to populate a local IBR Databse filled with local images. Uncommenting the paths indicated
+in the source code will allow fetching from the Crawler folder.
+
+— PHash Service
+
+Simple MAVEN project
+
+*Projects share most resources and classes and the project structure as shown in this source tree needs to be maintained during compilation*

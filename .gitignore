@@ -1,0 +1,7 @@
+target
+ImgurImages
+ImageNetDB
+ImageNetQueue
+LocalImageDB
+.DS_Store
+/ViewerService/nbproject/private/
